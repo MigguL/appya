@@ -5,15 +5,15 @@
         <div class="row pb-5">
           <div class="col-lg-6 pt-4 my-auto">
             <div class="text-center text-light mb-3 d-block d-lg-none">
-              <h1 class="display-3 display">{{ title }}</h1>
-              <h3>Safe and Secure</h3>
+              <h1 class="display-3 display outline">{{ title }}</h1>
+              <h3 class="outline">Safe and Secure</h3>
             </div>
             <img id="iphone-img" src="../assets/app.png" class="img-fluid" />
           </div>
           <div class="col-lg-6 my-auto pt-4">
             <div class="text-center text-light mb-3 d-none d-lg-block">
-              <h1 class="display-3">{{ title }}</h1>
-              <h3>Safe and Secure</h3>
+              <h1 class="display-3 outline">{{ title }}</h1>
+              <h3 class="outline">Safe and Secure</h3>
             </div>
 
             <div class="border p-3 p-md-5 bg-white rounded shadow">
@@ -91,8 +91,40 @@
         </div>
       </div>
     </div>
-    <div id="contact" class="bg-info p-4"></div>
-    <div id="footer" class="bg-primary p-4"></div>
+    <div id="contact" class="p-4">
+      <div class="row justify-content-center mt-3 mb-3">
+        <div class="col-lg-4">
+          <h2>Any Questions?</h2>
+          <p>Contact us by filling out the information below</p>
+          <form>
+            <div class="form-group text-left">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Enter Your Email"
+              />
+              <textarea
+                class="form-control mt-3 scroll"
+                placeholder="Enter Your Message"
+                rows="5"
+              >
+              </textarea>
+            </div>
+            <button type="submit" class="btn btn-light">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div id="footer" class="p-4">
+      <footer class="text-light p-4">
+        <a href="https://github.com/MigguL" target="_blank" class="color"
+          >Visit my Github</a
+        >
+        <a href="#" class="color">Privacy Policy</a>
+        <br />
+        <small>&copy; 2020, AppYa.app</small>
+      </footer>
+    </div>
   </div>
 </template>
 
@@ -126,5 +158,46 @@ export default {
 
 #about {
   min-height: 40vh;
+}
+
+.outline {
+  text-shadow: -0.5px -0.5px 0 rgb(47, 47, 47), 0.5px -0.5px 0 rgb(47, 47, 47),
+    -0.5px 0.5px 0 rgb(47, 47, 47), 0.5px 0.5px 0 rgb(47, 47, 47);
+}
+
+#contact {
+  background-color: #b1c9e0;
+}
+
+textarea {
+  resize: none;
+}
+
+.scroll::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* Chrome/Safari/Webkit */
+}
+
+.scroll {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+#footer {
+  background-color: #252223;
+}
+
+a {
+  text-decoration: none;
+}
+
+.color {
+  color: #ffc107;
+}
+
+a:active,
+a:focus {
+  outline: 0;
+  border: none;
 }
 </style>
