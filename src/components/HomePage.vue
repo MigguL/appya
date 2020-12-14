@@ -5,14 +5,14 @@
         <div class="col-lg-6 pt-4 my-auto">
           <div class="text-center text-light mb-3 d-block d-lg-none">
             <h1 class="display-3 display outline">{{ title }}</h1>
-            <h3 class="outline">Safe and Secure</h3>
+            <h3 class="outline">Safe and Secure Cloud Storage</h3>
           </div>
           <img id="iphone-img" src="../assets/app.png" class="img-fluid" />
         </div>
         <div class="col-lg-6 my-auto pt-4">
           <div class="text-center text-light mb-3 d-none d-lg-block">
             <h1 class="display-3 outline">{{ title }}</h1>
-            <h3 class="outline">Safe and Secure</h3>
+            <h3 class="outline">Safe and Secure Cloud Storage</h3>
           </div>
 
           <div class="border p-3 p-md-5 bg-white rounded shadow">
