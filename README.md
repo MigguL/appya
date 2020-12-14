@@ -1,10 +1,10 @@
-# servous
+# appya
 
 > A landing page built with Vue.js and Firebase
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 npm install
 
