@@ -5,16 +5,11 @@ import App from './App'
 import router from './router'
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import AOS from 'aos'
-import 'aos/dist/aos.css'
 
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({
-  created () {
-    AOS.init()
-  },
   el: '#app',
   router,
   components: { App },
