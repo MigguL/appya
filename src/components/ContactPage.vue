@@ -1,7 +1,7 @@
 <template>
   <div id="contact" class="p-4 bg-light">
     <div class="row justify-content-center mt-3 mb-3">
-      <div class="col-lg-4">
+      <div class="col-lg-6 col-md-6 col-sm-9 col-xs-6 mb-md-0">
         <h2>Any Questions?</h2>
         <p>Contact us by filling out the information below</p>
         <form>
