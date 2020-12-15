@@ -17,13 +17,15 @@
 
           <div class="border p-3 p-md-5 bg-white rounded shadow">
             <h2>Coming Soon!</h2>
-            <form>
+            <form @submit.prevent="addEmail(email)">
               <div class="form-group">
                 <label for="emailSignup"
                   >Register your account now in order to join our first
                   launch</label
                 >
                 <input
+                  v-model="email"
+                  type="email"
                   id="emailSignup"
                   placeholder="Email here"
                   class="form-control"
@@ -31,9 +33,15 @@
                 <small id="emailHelp" class="form-text text-muted"
                   >We won't share your email address</small
                 >
-                <button class="btn custom-color mt-3 rounded-pill">
+                <button
+                  type="submit"
+                  class="btn custom-color mt-3 rounded-pill"
+                >
                   Join Waiting List
                 </button>
+                <div class="mt-4">
+                  <p class="m-0">{{ message }}</p>
+                </div>
               </div>
             </form>
           </div>
@@ -61,11 +69,40 @@
 </template>
 
 <script>
+import { Auth } from "../firebase/auth.js";
+
 export default {
   data() {
     return {
       title: "AppYa",
+      email: "",
+      message: "",
     };
+  },
+  methods: {
+    async addEmail(email) {
+      var noticeMess = "🔥 Yaaay your account has been reserved 🔥";
+      await Auth.createUserWithEmailAndPassword(
+        email,
+        this.randomPassword(20)
+      ).catch(function (error) {
+        if (error.code != "auth/email-already-in-use") {
+          noticeMess = error.message;
+        }
+      });
+      this.message = noticeMess;
+      this.email = "";
+    },
+    randomPassword(length) {
+      var chars =
+        "abcdefghijklmnopqrstuvwxyz!@#$%^&*()-+<>ABCDEFGHIJKLMNOP1234567890";
+      var password = "";
+      for (var i = 0; i < length; i++) {
+        var num = Math.floor(Math.random() * chars.length);
+        password += chars.charAt(num);
+      }
+      return password;
+    },
   },
 };
 </script>
