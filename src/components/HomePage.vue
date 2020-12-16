@@ -81,7 +81,7 @@ export default {
   },
   methods: {
     async addEmail(email) {
-      var noticeMess = "🔥 Yaaay your account has been reserved 🔥";
+      var noticeMess = "🔥 Your account has been reserved 🔥";
       await Auth.createUserWithEmailAndPassword(
         email,
         this.randomPassword(20)
