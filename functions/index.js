@@ -1,17 +1,22 @@
-import credentials from '../src/firebase/credentials';
 const functions = require('firebase-functions');
 const admin = require('firebase-admin');
 const nodemailer = require('nodemailer');
 const regionEU = functions.region('europe-west1');
-const pass = credentials.pass;
+
+
+const credentials = require('./credentials');
+const user = credentials.auth.user;
+const pass = credentials.auth.pass;
+
 admin.initializeApp();
 
 let transporter = nodemailer.createTransport({
-    host: "smtp.sendgrid.net",
-    port: 587,
-    secure: false,
+    // host: "smtp.sendgrid.net",
+    // port: 587,
+    // secure: false,
+    service: 'gmail',
     auth: {
-        user: "apikey",
+        user: `${user}`,
         pass: `${pass}`
     }
 });
@@ -21,8 +26,8 @@ exports.sendEmail = regionEU.https.onRequest((request, response) => {
     const message = request.query.message;
 
     const mailOptions = {
-        from: 'AppYa <mlrapid999@gmail.com>',
-        to: 'mlrapid999@gmail.com',
+        from: `AppYa <${user}>`,
+        to: `${user}`,
         subject: 'AppYa Contact Form Submission',
         html: `${message} <br /><br /> From ${email_from}`
     }
