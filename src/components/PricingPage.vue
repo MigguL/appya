@@ -1,13 +1,11 @@
 <template>
-  <div id="pricing" class="bg-light p-2 p-md-5 container-fluid">
+  <main id="pricing" class="bg-light p-2 p-md-5 container-fluid">
     <div class="row">
-      <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 mb-3">
-        <div class="bg-white p-5 rounded-lg shadow">
+      <section class="col-xl-3 col-lg-6 col-md-6 col-sm-12 mb-3">
+        <article class="bg-white p-5 rounded-lg shadow">
           <h1 class="h6 text-uppercase font-weight-bold mb-4">Trial</h1>
           <h2 class="h1 font-weight-bold">$0</h2>
-
-          <div class="custom-separator my-4 mx-auto custom-color"></div>
-
+          <hr class="custom-separator my-4 mx-auto custom-color" />
           <ul class="list-unstyled my-5">
             <li class="mb-2">
               <h5>10 GB Disk Space</h5>
@@ -41,15 +39,13 @@
             class="btn custom-color btn-block p-2 shadow rounded-pill soon"
             >Coming soon!</a
           >
-        </div>
-      </div>
-      <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 mb-3">
-        <div class="bg-white p-5 rounded-lg shadow">
+        </article>
+      </section>
+      <section class="col-xl-3 col-lg-6 col-md-6 col-sm-12 mb-3">
+        <article class="bg-white p-5 rounded-lg shadow">
           <h1 class="h6 text-uppercase font-weight-bold mb-4">Basic</h1>
           <h2 class="h1 font-weight-bold">$200</h2>
-
-          <div class="custom-separator my-4 mx-auto custom-color"></div>
-
+          <hr class="custom-separator my-4 mx-auto custom-color" />
           <ul class="list-unstyled my-5">
             <li class="mb-2">
               <h5>500 GB Disk Space</h5>
@@ -75,15 +71,13 @@
             class="btn custom-color btn-block p-2 shadow rounded-pill soon"
             >Coming Soon!</a
           >
-        </div>
-      </div>
-      <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 mb-3">
-        <div class="bg-white p-5 rounded-lg shadow">
+        </article>
+      </section>
+      <section class="col-xl-3 col-lg-6 col-md-6 col-sm-12 mb-3">
+        <article class="bg-white p-5 rounded-lg shadow">
           <h1 class="h6 text-uppercase font-weight-bold mb-4">Jumbo</h1>
           <h2 class="h1 font-weight-bold">$370</h2>
-
-          <div class="custom-separator my-4 mx-auto custom-color"></div>
-
+          <hr class="custom-separator my-4 mx-auto custom-color" />
           <ul class="list-unstyled my-5">
             <li class="mb-2">
               <h5>1 TB Disk Space</h5>
@@ -109,15 +103,13 @@
             class="btn custom-color btn-block p-2 shadow rounded-pill soon"
             >Coming Soon!</a
           >
-        </div>
-      </div>
-      <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 mb-3">
-        <div class="bg-white p-5 rounded-lg shadow">
+        </article>
+      </section>
+      <section class="col-xl-3 col-lg-6 col-md-6 col-sm-12 mb-3">
+        <article class="bg-white p-5 rounded-lg shadow">
           <h1 class="h6 text-uppercase font-weight-bold mb-4">Jumbo Plus</h1>
           <h2 class="h1 font-weight-bold">$680</h2>
-
-          <div class="custom-separator my-4 mx-auto custom-color"></div>
-
+          <hr class="custom-separator my-4 mx-auto custom-color" />
           <ul class="list-unstyled my-5">
             <li class="mb-2">
               <h5>2 TB Disk Space</h5>
@@ -141,12 +133,13 @@
           <a
             href="#"
             class="btn custom-color btn-block p-2 shadow rounded-pill soon"
-            >Coming Soon!</a
           >
-        </div>
-      </div>
+            Coming Soon!
+          </a>
+        </article>
+      </section>
     </div>
-  </div>
+  </main>
 </template>
 
 <style scoped>
@@ -173,7 +166,7 @@ h5 {
   color: white;
 }
 
-a.soon {
+.soon {
   pointer-events: none;
   cursor: default;
 }
