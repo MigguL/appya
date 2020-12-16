@@ -1,21 +1,21 @@
 <template>
-  <div id="home-page" class="full-height p-4">
+  <section class="full-height p-4 home-page">
     <div class="container pt-3">
       <div class="row pb-5">
         <div class="col-lg-6 pt-4 my-auto">
-          <div class="text-center text-light mb-3 d-block d-lg-none">
+          <article class="text-center text-light mb-3 d-block d-lg-none">
             <h1 class="display-3 display outline">{{ title }}</h1>
             <h3 class="outline">Safe and Secure Cloud Storage</h3>
-          </div>
-          <img id="iphone-img" src="../assets/app.png" class="img-fluid" />
+          </article>
+          <img src="../assets/app.png" class="img-fluid iphone-img" />
         </div>
         <div class="col-lg-6 my-auto pt-4">
-          <div class="text-center text-light mb-3 d-none d-lg-block">
+          <article class="text-center text-light mb-3 d-none d-lg-block">
             <h1 class="display-3 outline">{{ title }}</h1>
             <h3 class="outline">Safe and Secure Cloud Storage</h3>
-          </div>
+          </article>
 
-          <div class="border p-3 p-md-5 bg-white rounded shadow">
+          <article class="border p-3 p-md-5 bg-white rounded shadow">
             <h2>Coming Soon!</h2>
             <form @submit.prevent="addEmail(email)">
               <div class="form-group">
@@ -44,9 +44,9 @@
                 </div>
               </div>
             </form>
-          </div>
+          </article>
 
-          <div id="available" class="p-3">
+          <article id="available" class="p-3">
             <div class="row">
               <div class="col my-auto">
                 <img
@@ -61,11 +61,11 @@
                 />
               </div>
             </div>
-          </div>
+          </article>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -81,7 +81,7 @@ export default {
   },
   methods: {
     async addEmail(email) {
-      var noticeMess = "🔥 Yaaay your account has been reserved 🔥";
+      var noticeMess = "🔥 Your account has been reserved 🔥";
       await Auth.createUserWithEmailAndPassword(
         email,
         this.randomPassword(20)
@@ -108,7 +108,7 @@ export default {
 </script>
 
 <style scoped>
-#home-page {
+.home-page {
   background-color: #06496b;
   background: url("../assets/bg-img.jpg") no-repeat center center;
   background-size: cover;
@@ -117,7 +117,7 @@ export default {
   -o-background-size: cover;
 }
 
-#iphone-img {
+.iphone-img {
   max-height: 80vh;
 }
 
