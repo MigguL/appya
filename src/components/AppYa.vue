@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid m-0 p-0 test">
+  <div class="m-0 p-0">
     <home-page></home-page>
 
     <about-page></about-page>

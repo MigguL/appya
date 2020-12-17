@@ -118,6 +118,7 @@ textarea {
 .hvr-fade:hover,
 .hvr-fade:active {
   background-color: #e74e59;
+  color: #fff;
 }
 
 .hvr-fade:visited {

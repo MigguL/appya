@@ -116,6 +116,21 @@ export default {
   -moz-background-size: cover;
   -o-background-size: cover;
 }
+/*mobile image interaction*/
+@media only screen and (max-width: 770px) {
+  .home-page {
+    background: url("../assets/bg-img.jpg") no-repeat 50%;
+    background-position-x: 50%;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-image: url("../assets/bg-img.jpg");
+    background-size: auto;
+    background-origin: padding-box;
+    background-clip: border-box;
+    background-size: cover;
+  }
+}
 
 .iphone-img {
   max-height: 80vh;
@@ -150,6 +165,7 @@ export default {
 .hvr-fade:hover,
 .hvr-fade:active {
   background-color: #e74e59;
+  color: #fff;
 }
 
 .hvr-fade:visited {

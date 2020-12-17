@@ -1,21 +1,30 @@
-# appya
+## :dart: About the project
 
-> A landing page built with Vue.js and Firebase
+AppYa is a landing page, promoting Cloud Storage Mobile App
 
-## Build Setup
+## :sparkles: Features
 
-```bash
-# install dependencies
-npm install
+:heavy_check_mark: Prelaunch app user registration;\
+:heavy_check_mark: Little mobile app preview;\
+:heavy_check_mark: Pricing list;\
+:heavy_check_mark: Contact form;
 
-# serve with hot reload at localhost:8080
-npm run dev
+## :rocket: Technologies
 
-# build for production with minification
-npm run build
+Main tools used in this project:
 
-# build for production and view the bundle analyzer report
-npm run build --report
-```
+- [Webpack](https://webpack.js.org/)
+- [Vue.js](https://vuejs.org/)
+- [Bootstrap](https://getbootstrap.com/)
+- [Firebase](https://firebase.google.com/)
+- [Node.js](https://nodejs.org/en/)
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+and other cool gadgets :smiley:
+
+Made with :heart: by <a href="https://github.com/miggul" target="_blank">MigguL</a>
+
+<div align="center" id="top">
+
+<a href="https://appya20.web.app" target="_blank">Live website preview</a>
+
+</div>
