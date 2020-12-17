@@ -1,32 +1,51 @@
 <template>
-  <section id="footer" class="p-4">
-    <footer class="text-light p-4">
-      <a href="https://github.com/MigguL" target="_blank" class="color"
-        >Visit my Github</a
-      >
-      <a href="#" class="color">Privacy Policy</a>
+  <footer id="footer" class="footer">
+    <section class="p-4 text-light">
+      <a href="https://github.com/MigguL" target="_blank" class="color p-1"
+        ><font-awesome-icon :icon="['fab', 'github']" />
+      </a>
+      <a href="https://twitter.com/miggu99" target="_blank" class="color p-1"
+        ><font-awesome-icon :icon="['fab', 'twitter']" />
+      </a>
+      <a
+        href="https://linkedin.com/in/michał-latos-2699a0200"
+        target="_blank"
+        class="color p-1"
+        ><font-awesome-icon :icon="['fab', 'linkedin']" />
+      </a>
+
       <br />
-      <small>&copy; 2020, AppYa.app</small>
-    </footer>
-  </section>
+      <small class="copy">&copy; 2020, AppYa.app</small>
+    </section>
+  </footer>
 </template>
 
 <style scoped>
-#footer {
-  background-color: #252223;
-}
-
 a {
   text-decoration: none;
-}
-
-.color {
-  color: #ffc107;
 }
 
 a:active,
 a:focus {
   outline: 0;
   border: none;
+}
+a:hover,
+.copy:hover {
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.footer {
+  background-color: #4f646f;
+}
+
+.color {
+  color: #f8f9fa;
+  font-size: 42px;
+}
+
+.copy {
+  font-size: 1em;
 }
 </style>

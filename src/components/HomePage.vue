@@ -35,7 +35,7 @@
                 >
                 <button
                   type="submit"
-                  class="btn custom-color mt-3 rounded-pill"
+                  class="btn hvr-fade custom-color mt-3 rounded-pill shadow"
                 >
                   Join Waiting List
                 </button>
@@ -110,7 +110,7 @@ export default {
 <style scoped>
 .home-page {
   background-color: #06496b;
-  background: url("../assets/bg-img.jpg") no-repeat center center;
+  background: url("../assets/bg-img.jpg") no-repeat 50% fixed;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -133,5 +133,26 @@ export default {
 .custom-color {
   background-color: #f85f6a;
   color: white;
+}
+
+.hvr-fade {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  overflow: hidden;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+}
+.hvr-fade:hover,
+.hvr-fade:active {
+  background-color: #e74e59;
+}
+
+.hvr-fade:visited {
+  background-color: #f85f6a;
 }
 </style>

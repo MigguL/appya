@@ -1,5 +1,5 @@
 <template>
-  <main id="pricing" class="bg-light p-2 p-md-5 container-fluid">
+  <main id="pricing" class="bg-light p-2 p-md-4 container-fluid">
     <div class="row">
       <section class="col-xl-3 col-lg-6 col-md-6 col-sm-12 mb-3">
         <article class="bg-white p-5 rounded-lg shadow">
@@ -36,7 +36,7 @@
           </ul>
           <a
             href="#"
-            class="btn custom-color btn-block p-2 shadow rounded-pill soon"
+            class="custom-color btn-block p-2 shadow rounded-pill soon"
             >Coming soon!</a
           >
         </article>
@@ -68,7 +68,7 @@
           </ul>
           <a
             href="#"
-            class="btn custom-color btn-block p-2 shadow rounded-pill soon"
+            class="custom-color btn-block p-2 shadow rounded-pill soon"
             >Coming Soon!</a
           >
         </article>
@@ -100,7 +100,7 @@
           </ul>
           <a
             href="#"
-            class="btn custom-color btn-block p-2 shadow rounded-pill soon"
+            class="custom-color btn-block p-2 shadow rounded-pill soon"
             >Coming Soon!</a
           >
         </article>
@@ -132,7 +132,7 @@
           </ul>
           <a
             href="#"
-            class="btn custom-color btn-block p-2 shadow rounded-pill soon"
+            class="custom-color btn-block p-2 shadow rounded-pill soon"
           >
             Coming Soon!
           </a>
