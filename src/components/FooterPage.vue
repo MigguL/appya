@@ -30,8 +30,7 @@ a:focus {
   outline: 0;
   border: none;
 }
-a:hover,
-.copy:hover {
+a:hover {
   opacity: 0.5;
   transition: 0.5s;
 }
@@ -47,5 +46,6 @@ a:hover,
 
 .copy {
   font-size: 1em;
+  cursor: initial;
 }
 </style>

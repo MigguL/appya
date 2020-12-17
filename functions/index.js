@@ -11,9 +11,6 @@ const pass = credentials.auth.pass;
 admin.initializeApp();
 
 let transporter = nodemailer.createTransport({
-    // host: "smtp.sendgrid.net",
-    // port: 587,
-    // secure: false,
     service: 'gmail',
     auth: {
         user: `${user}`,
